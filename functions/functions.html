@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html>(
 
 <head>
     <title>JavaScript Functions</title>
@@ -9,15 +9,40 @@
     <h1>isPalindrome Function</h1>
 
     <script>
-/* Checks if a character is a letter */
+
 function isLetter(char) {
     char = char.toLowerCase();
     return "abcdefghijklmnopqrstuvwxyz".indexOf(char) >= 0;
 }
 
 // Write your isPalindrome function here!
+function palindrome(word){
+	word = word.split("");
+	var a = word.reverse();
+	return a==word;
+}
+
+if (palindrome(prompt("put in a word"))){
+    alert("that is a palindrome");
+}
+else{
+	alert("it is not a palindrome");
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
     </script>
+
 </body>
 
 </html>
